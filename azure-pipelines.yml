@@ -9,7 +9,7 @@ trigger:
 pool:
   name: Azure pipelines
   demands:
-   - agent.name -equals Hosted agent
+   - agent.name -equals Hosted Agent
   vmImage: ubuntu-latest
 
 variables:
