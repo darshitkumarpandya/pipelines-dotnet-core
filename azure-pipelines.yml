@@ -7,7 +7,9 @@ trigger:
 - master
 
 pool:
-  vmImage: 'Ubuntu-16.04'
+  name: Azure pipelines
+  demands:
+   - agent.name -equals Hosted agent
 
 variables:
   buildConfiguration: 'Release'
